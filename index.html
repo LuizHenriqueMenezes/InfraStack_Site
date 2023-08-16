@@ -2,46 +2,164 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfraStack</title>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imgs/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfraStack</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="imgs/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <span id="header">
-            <ul id="barra-itens">
-                <li class="li-barra" id="logo">
-                    <a href="">InfraStack Solutions</a>
-                </li>
-                <li class="li-barra" id="services">
-                    <a href="">Serviços</a>
-                </li>
-                <li class="li-barra" id="product">
-                    <a href="">Produtos</a>
-                </li>
-                <li class="li-barra" id="search">
-                    <a href="">Pesquise🔎</a>
-                </li>
-                <li class="li-barra" id="quem-somos">
-                    <a href="">Quem somos</a>
-                </li>
-                <li class="li-barra" id="login">
-                    <a href="">Login</a>
-                </li>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">InfraStack </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Quem somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Suporte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login/login.html">Entre ou Cadastre-se</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Primeira vez</a></li>
+              <li><a class="dropdown-item" href="#">Já tenho conta</a></li>
+              <!-- <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#"></a></li>-->
             </ul>
-        </span>
-    </header>
-    <div>
-        <span id="container-1">
-            <span><img src="imgs/pczao.png" alt="pc foto" id="pc"></span>
-            <p id="Slogan">Sua infraestrutura, nosso comprimisso</p>
-            <p id="sub">CONHEÇA JÁ OS NOSSOS SERVIÇOS</p>
-        </span>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Digite aqui" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+      </div>
     </div>
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imgs/cachorrinhaex.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imgs/cachorrinhoex.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imgs/cachorrinhoex.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <div class="container">
+    <div class="card text-bg-dark">
+      <img src="imgs/cachorrinhoex.png" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="imgs/so.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Instalação de Sistema Operacional</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="imgs/nuvem.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mudança para nuvem</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="imgs/treinamento.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Treinamento para funcionários</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="footer-dark">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Web design</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">Hosting</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3>Company Name</h3>
+            <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus
+              elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+          </div>
+          <p class="copyright">Ana Carla Garcia, Beatriz Feitosa e Luiz H. Menezes © 2023</p>
+        </div>
+    </footer>
+  </div>
 </body>
 
 </html>
