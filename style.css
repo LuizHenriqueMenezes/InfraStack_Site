@@ -1,3 +1,6 @@
+body{
+    background-image: linear-gradient( to top, #0a1128, black);
+}
 .footer-dark {
     padding: 50px 0;
     color: #f0f9ff;
@@ -86,4 +89,18 @@
     opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0;
+}
+
+#textYears{
+    color: #fefefa;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#textYears h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    
 }
