@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-nav {
+#menuNav {
     background-color: black;
     padding: 0 20px;
     /* esse comando da um espaço entre os componentes */
@@ -11,34 +11,34 @@ nav {
     align-items: center;
 }
 
-ul {
+#ulinks {
     /*tira o style da ul*/
     list-style: none;
     /*---*/
     padding: 0;
 }
 
-li {
+.liLink {
     /*0-> vertical 20-> horizontal*/
     padding: 20px 30px;
     padding-bottom: 0;
 }
 
-h1,
+#titleLogo,
 p {
     color: #fff;
 }
 
 /* mudar a direção das palavras */
-nav,
-ul {
+#menuNav,
+#ulinks {
     display: flex;
     flex-direction: row;
     overflow: hidden;
     transition: all 0.5s;
 }
 
-h1 {
+#titleLogo {
     margin: 0;
     padding: 5px;
 }
@@ -58,39 +58,43 @@ button {
     display: none;
 }
 
+.decorationA{
+    text-decoration: none;
+}
+
 /* "O hover permite a criação de diversos efeitos interessantes em uma página HTML." */
-li:hover,
-h1:hover,
+.liLink:hover,
+#titleLogo:hover,
 button:hover {
     cursor: pointer;
     opacity: 0.8;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-button:focus~ul {
+button:focus~#ulinks {
     height: 300px;
 }
 
 /* "@media funciona para você determinar um estilo CSS para cada tipo de mídia que te interessar" */
 @media(max-width: 700px) {
 
-    nav,
-    ul {
+    #menuNav,
+    #ulinks {
         flex-direction: column;
     }
 
-    ul {
+    #ulinks {
         text-align: center;
         margin: 0;
         height: 0;
     }
 
-    nav {
+    #menuNav {
         padding: 0;
         align-items: flex-start;
     }
 
-    h1 {
+    #titleLogo {
         margin: 10px;
     }
 
@@ -98,8 +102,8 @@ button:focus~ul {
         display: flex;
     }
 
-    li,
-    ul {
+    .liLink,
+    #ulinks {
         width: 100%;
     }
 }

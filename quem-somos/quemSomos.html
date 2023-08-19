@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem somos?</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="icon" href="imgs/logo.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,44 +17,35 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">InfraStack </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="quemSomos.html">Quem somos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Suporte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../login/login.html">Entre ou Cadastre-se</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Serviços
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Primeira vez</a></li>
-                            <li><a class="dropdown-item" href="#">Já tenho conta</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#"></a></li>-->
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Digite aqui" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-                </form>
-            </div>
+    <nav id="menuNav">
+        <div class="logo">
+            <a href="../index.html" class="decorationA">
+                <h1 id="titleLogo">InfraStack Services</h1>
+            </a>
         </div>
+        <!-- &#9776; = menu sandwich -->
+        <button>&#9776;</button>
+        <ul id="ulinks">
+            <li class="liLink">
+                <p>Serviços</p>
+            </li>
+            <li class="liLink">
+                <p>Carrinho</p>
+            </li>
+            <li class="liLink">
+                <p>Suporte</p>
+            </li>
+            <li class="liLink">
+                <a href="../login/login.html" class="decorationA">
+                    <p>Entre ou Cadastre-se</p>
+                </a>
+            </li>
+            <li class="liLink">
+                <a href="quemSomos.html" class="decorationA">
+                    <p>Quem somos?</p>
+                </a>
+            </li>
+        </ul>
     </nav>
     <br>
     <div id="textYears">
