@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-image: linear-gradient( to top, black, #001f54, black);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#menuNav {
+    background-color: black;
+    padding: 0 20px;
+    /* esse comando da um espaço entre os componentes */
+    justify-content: space-between;
+    /*---*/
+    align-items: center;
+}
+
+#ulinks {
+    /*tira o style da ul*/
+    list-style: none;
+    /*---*/
+    padding: 0;
+}
+
+.liLink {
+    /*0-> vertical 20-> horizontal*/
+    padding: 20px 30px;
+    padding-bottom: 0;
+}
+
+#titleLogo,
+p {
+    color: #fff;
+}
+
+/* mudar a direção das palavras */
+#menuNav,
+#ulinks {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+#titleLogo {
+    margin: 0;
+    padding: 5px;
+}
+
+.logo{
+    color: #fefefa;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+.decorationA{
+    text-decoration: none;
+}
+
+/* "O hover permite a criação de diversos efeitos interessantes em uma página HTML." */
+.liLink:hover,
+#titleLogo:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button:focus~#ulinks {
+    height: 300px;
+}
+
+/* "@media funciona para você determinar um estilo CSS para cada tipo de mídia que te interessar" */
+@media(max-width: 700px) {
+
+    #menuNav,
+    #ulinks {
+        flex-direction: column;
+    }
+
+    #ulinks {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    #menuNav {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    #titleLogo {
+        margin: 10px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    .liLink,
+    #ulinks {
+        width: 100%;
+    }
+}
