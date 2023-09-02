@@ -26,6 +26,7 @@ body{
     /*0-> vertical 20-> horizontal*/
     padding: 20px 30px;
     padding-bottom: 0;
+    margin-top: -20px;
 }
 
 #titleLogo,
